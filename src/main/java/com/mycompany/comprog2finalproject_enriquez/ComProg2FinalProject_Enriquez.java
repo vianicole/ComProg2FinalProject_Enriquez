@@ -11,6 +11,6 @@ package com.mycompany.comprog2finalproject_enriquez;
 public class ComProg2FinalProject_Enriquez {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        System.out.println("HELLO FINAL,");
     }
 }
