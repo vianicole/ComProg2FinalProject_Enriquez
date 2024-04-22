@@ -8,12 +8,12 @@ package com.mycompany.comprog2finalproject_enriquez;
  *
  * @author user
  */
-public class JProblem1 extends javax.swing.JFrame {
+public class JFrameProblem1 extends javax.swing.JFrame {
 
     /**
      * Creates new form JProblem1
      */
-    public JProblem1() {
+    public JFrameProblem1() {
         initComponents();
     }
 
@@ -54,6 +54,7 @@ public class JProblem1 extends javax.swing.JFrame {
             }
         });
 
+        output.setEditable(false);
         output.setColumns(20);
         output.setRows(5);
         jScrollPane1.setViewportView(output);
@@ -154,20 +155,21 @@ public class JProblem1 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(JProblem1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JFrameProblem1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(JProblem1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JFrameProblem1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(JProblem1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JFrameProblem1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(JProblem1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JFrameProblem1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new JProblem1().setVisible(true);
+                new JFrameProblem1().setVisible(true);
             }
         });
     }

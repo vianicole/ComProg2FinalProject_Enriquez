@@ -6,14 +6,14 @@ package com.mycompany.comprog2finalproject_enriquez;
 
 /**
  *
- * @author user
+ * @author PC
  */
-public class JProblem4 extends javax.swing.JFrame {
+public class JFrameProblem8 extends javax.swing.JFrame {
 
     /**
-     * Creates new form JProblem4
+     * Creates new form JProblem8
      */
-    public JProblem4() {
+    public JFrameProblem8() {
         initComponents();
     }
 
@@ -49,9 +49,9 @@ public class JProblem4 extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(253, Short.MAX_VALUE)
+                .addContainerGap(251, Short.MAX_VALUE)
                 .addComponent(jButton1)
-                .addGap(24, 24, 24))
+                .addGap(26, 26, 26))
         );
 
         pack();
@@ -81,20 +81,21 @@ public class JProblem4 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(JProblem4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JFrameProblem8.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(JProblem4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JFrameProblem8.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(JProblem4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JFrameProblem8.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(JProblem4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JFrameProblem8.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new JProblem4().setVisible(true);
+                new JFrameProblem8().setVisible(true);
             }
         });
     }

@@ -8,12 +8,12 @@ package com.mycompany.comprog2finalproject_enriquez;
  *
  * @author user
  */
-public class JProblem2 extends javax.swing.JFrame {
+public class JFrameProblem3 extends javax.swing.JFrame {
 
     /**
-     * Creates new form JProblem2
+     * Creates new form JProblem3
      */
-    public JProblem2() {
+    public JFrameProblem3() {
         initComponents();
     }
 
@@ -49,9 +49,9 @@ public class JProblem2 extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(258, Short.MAX_VALUE)
+                .addContainerGap(253, Short.MAX_VALUE)
                 .addComponent(jButton1)
-                .addGap(19, 19, 19))
+                .addGap(24, 24, 24))
         );
 
         pack();
@@ -60,8 +60,8 @@ public class JProblem2 extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
     NewJFrameSets back = new NewJFrameSets(); 
         
-    back.show();
-    dispose();
+        back.show();
+        dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -81,20 +81,21 @@ public class JProblem2 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(JProblem2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JFrameProblem3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(JProblem2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JFrameProblem3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(JProblem2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JFrameProblem3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(JProblem2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JFrameProblem3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new JProblem2().setVisible(true);
+                new JFrameProblem3().setVisible(true);
             }
         });
     }
