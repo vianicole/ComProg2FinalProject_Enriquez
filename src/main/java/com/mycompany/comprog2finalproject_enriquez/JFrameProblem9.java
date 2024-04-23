@@ -113,7 +113,7 @@ public class JFrameProblem9 extends javax.swing.JFrame {
 
         int wordCount = words.length;
 
-        output.getText("Number of words: " + wordCount);
+        output.setText("Number of words: " + wordCount);
     
     }//GEN-LAST:event_jButton2ActionPerformed
 
