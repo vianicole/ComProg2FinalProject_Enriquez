@@ -4,6 +4,8 @@
  */
 package com.mycompany.comprog2finalproject_enriquez;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author PC
@@ -29,9 +31,9 @@ public class JFrameProblem9 extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         input = new javax.swing.JTextField();
-        button = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         output = new javax.swing.JTextArea();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -44,16 +46,16 @@ public class JFrameProblem9 extends javax.swing.JFrame {
 
         jLabel1.setText("Enter Sentence: ");
 
-        button.setText("Count");
-        button.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonActionPerformed(evt);
-            }
-        });
-
         output.setColumns(20);
         output.setRows(5);
         jScrollPane1.setViewportView(output);
+
+        jButton2.setText("Count");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -67,12 +69,12 @@ public class JFrameProblem9 extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(276, 276, 276)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(button)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel1)
                                 .addGap(27, 27, 27)
                                 .addComponent(input, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton2))))
                 .addContainerGap(306, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -84,9 +86,9 @@ public class JFrameProblem9 extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel1)
                     .addComponent(input, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(28, 28, 28)
-                .addComponent(button)
-                .addGap(135, 135, 135)
+                .addGap(18, 18, 18)
+                .addComponent(jButton2)
+                .addGap(145, 145, 145)
                 .addComponent(jButton1)
                 .addGap(29, 29, 29))
         );
@@ -98,15 +100,22 @@ public class JFrameProblem9 extends javax.swing.JFrame {
     NewJFrameSets back = new NewJFrameSets(); 
         
         back.show();
-        dispose();
+        dispose();  
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonActionPerformed
-        // TODO add your handling code here:
-          String sentence = input.getText();
-                int wordCount = countWords(sentence);
-                output.setText("Number of words: " + wordCount);
-    }//GEN-LAST:event_buttonActionPerformed
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    
+        String inputString = input.getText();
+
+        inputString = inputString.trim();
+
+        String[] words = inputString.split("\\s+");
+
+        int wordCount = words.length;
+
+        output.getText("Number of words: " + wordCount);
+    
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -145,9 +154,9 @@ public class JFrameProblem9 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton button;
     private javax.swing.JTextField input;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea output;
