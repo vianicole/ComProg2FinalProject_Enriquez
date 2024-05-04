@@ -129,7 +129,20 @@ public class JFrameProblem2 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-   
+    String inputted = input.getText();
+            if (inputted.matches("\\d+")) {
+                int number = Integer.parseInt(inputted);
+                int sum = 0;
+                while (number != 0) {
+                    sum += number % 10;
+                    number /= 10;
+                }
+                output.setText("Sum of Digits: " + sum);
+            } else {
+                output.setText("Invalid input! Please enter an integer.");
+            }
+        
+
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void inputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inputActionPerformed
