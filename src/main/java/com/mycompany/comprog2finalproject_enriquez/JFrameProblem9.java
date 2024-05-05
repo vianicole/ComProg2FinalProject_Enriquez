@@ -39,7 +39,7 @@ public class JFrameProblem9 extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton1.setBackground(new java.awt.Color(204, 51, 255));
+        jButton1.setBackground(new java.awt.Color(255, 102, 102));
         jButton1.setText("Back");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -47,18 +47,18 @@ public class JFrameProblem9 extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setText("Enter Sentence: ");
+        jLabel1.setText("Input Sentence: ");
 
-        input.setBackground(new java.awt.Color(204, 102, 255));
+        input.setBackground(new java.awt.Color(255, 204, 204));
 
         output.setEditable(false);
-        output.setBackground(new java.awt.Color(204, 153, 255));
+        output.setBackground(new java.awt.Color(255, 204, 204));
         output.setColumns(20);
         output.setForeground(new java.awt.Color(204, 153, 255));
         output.setRows(5);
         jScrollPane1.setViewportView(output);
 
-        jButton2.setBackground(new java.awt.Color(204, 51, 255));
+        jButton2.setBackground(new java.awt.Color(255, 102, 102));
         jButton2.setText("Count");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -67,9 +67,11 @@ public class JFrameProblem9 extends javax.swing.JFrame {
         });
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 153, 153));
         jLabel2.setText("COUNT WORD IN SENTENCE");
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 153, 153));
         jLabel3.setText("PROBLEM 9");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -81,32 +83,32 @@ public class JFrameProblem9 extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jButton1)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addContainerGap(588, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 165, Short.MAX_VALUE)
+                        .addGap(0, 0, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                         .addComponent(jLabel1)
                                         .addGap(27, 27, 27)
                                         .addComponent(input, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton2))
-                                .addGap(157, 157, 157))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(jLabel2)
-                                .addGap(178, 178, 178))
+                                    .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton2, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                        .addComponent(jLabel2)
+                                        .addGap(21, 21, 21)))
+                                .addGap(205, 205, 205))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addComponent(jLabel3)
-                                .addGap(215, 215, 215))))))
+                                .addGap(264, 264, 264))))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(110, Short.MAX_VALUE)
+                .addContainerGap(144, Short.MAX_VALUE)
                 .addComponent(jLabel3)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel2)
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -116,7 +118,7 @@ public class JFrameProblem9 extends javax.swing.JFrame {
                     .addComponent(input, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jButton2)
-                .addGap(51, 51, 51)
+                .addGap(123, 123, 123)
                 .addComponent(jButton1)
                 .addGap(29, 29, 29))
         );

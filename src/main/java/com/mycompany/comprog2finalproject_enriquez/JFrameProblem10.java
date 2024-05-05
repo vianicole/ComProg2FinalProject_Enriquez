@@ -44,6 +44,7 @@ public class JFrameProblem10 extends javax.swing.JFrame {
             }
         });
 
+        input.setBackground(new java.awt.Color(204, 102, 255));
         input.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 inputActionPerformed(evt);
@@ -52,6 +53,7 @@ public class JFrameProblem10 extends javax.swing.JFrame {
 
         jLabel1.setText("Enter a number:");
 
+        calculate.setBackground(new java.awt.Color(204, 0, 255));
         calculate.setText("Generate");
         calculate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -60,6 +62,7 @@ public class JFrameProblem10 extends javax.swing.JFrame {
         });
 
         output.setEditable(false);
+        output.setBackground(new java.awt.Color(204, 153, 255));
         output.setColumns(20);
         output.setRows(5);
         jScrollPane1.setViewportView(output);
@@ -133,15 +136,14 @@ public class JFrameProblem10 extends javax.swing.JFrame {
     }//GEN-LAST:event_inputActionPerformed
 
     private void calculateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calculateActionPerformed
-        // TODO add your handling code here:
     String inp = input.getText();
     int number = Integer.parseInt(inp);
     String table = "Multiplication Table for " + number + "\n" ;
     for (int i = 1; i <= 10; i++) {
-    output.setText(table  += number + " x " + i + " = " + (number * i) + "\n"); 
-
-    }   
-  
+    output.setText(table += number + " x " + i + " = " + (number * i) + "\n"); 
+    
+     }  
+    
     }//GEN-LAST:event_calculateActionPerformed
 
     /**

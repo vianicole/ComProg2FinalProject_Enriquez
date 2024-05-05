@@ -39,7 +39,7 @@ public class JFrameProblem2 extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton1.setBackground(new java.awt.Color(255, 0, 153));
+        jButton1.setBackground(new java.awt.Color(255, 102, 102));
         jButton1.setText("Back");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -47,16 +47,16 @@ public class JFrameProblem2 extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setText("Enter Number:");
+        jLabel1.setText("Input Number:");
 
-        input.setBackground(new java.awt.Color(255, 51, 153));
+        input.setBackground(new java.awt.Color(255, 204, 204));
         input.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 inputActionPerformed(evt);
             }
         });
 
-        jButton2.setBackground(new java.awt.Color(255, 0, 153));
+        jButton2.setBackground(new java.awt.Color(255, 102, 102));
         jButton2.setText("Calculate");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -65,26 +65,25 @@ public class JFrameProblem2 extends javax.swing.JFrame {
         });
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 153, 153));
         jLabel4.setText("SUM OF DIGITS");
 
-        output.setBackground(new java.awt.Color(255, 102, 153));
+        output.setBackground(new java.awt.Color(255, 204, 204));
         output.setColumns(20);
         output.setRows(5);
         jScrollPane1.setViewportView(output);
 
+        jLabel5.setBackground(new java.awt.Color(255, 153, 153));
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 153, 153));
         jLabel5.setText("PROBLEM 2");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(26, 26, 26)
-                .addComponent(jButton1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(217, Short.MAX_VALUE)
+                .addContainerGap(218, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -100,36 +99,41 @@ public class JFrameProblem2 extends javax.swing.JFrame {
                                 .addComponent(jLabel1)
                                 .addGap(73, 73, 73)
                                 .addComponent(input, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(92, 92, 92)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel5)
-                                    .addComponent(jLabel4))))
-                        .addGap(176, 176, 176))))
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(187, 187, 187))))
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel4)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                            .addGap(26, 26, 26)
+                            .addComponent(jButton1))
+                        .addGroup(layout.createSequentialGroup()
+                            .addGap(303, 303, 303)
+                            .addComponent(jLabel5))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(83, 83, 83)
                 .addComponent(jLabel3)
-                .addGap(82, 82, 82)
+                .addGap(72, 72, 72)
                 .addComponent(jLabel5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel4)
-                .addGap(36, 36, 36)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 19, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, Short.MAX_VALUE)
+                .addGap(18, 25, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(input, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1))
-                .addGap(29, 29, 29)
-                .addComponent(jButton2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton2)
+                .addGap(64, 64, 64)
                 .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 147, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addGap(22, 22, 22))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 87, Short.MAX_VALUE)
+                .addComponent(jButton1))
         );
 
         pack();
@@ -143,7 +147,20 @@ public class JFrameProblem2 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-   
+    String inputted = input.getText();
+            if (inputted.matches("\\d+")) {
+                int number = Integer.parseInt(inputted);
+                int sum = 0;
+                while (number != 0) {
+                    sum += number % 10;
+                    number /= 10;
+                }
+                output.setText("Sum of Digits: " + sum);
+            } else {
+                output.setText("Invalid input! Please enter an integer.");
+            }
+        
+
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void inputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inputActionPerformed

@@ -44,12 +44,12 @@ public class JFrameProblem3 extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jButton1)
-                .addContainerGap(322, Short.MAX_VALUE))
+                .addContainerGap(588, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(253, Short.MAX_VALUE)
+                .addContainerGap(553, Short.MAX_VALUE)
                 .addComponent(jButton1)
                 .addGap(24, 24, 24))
         );

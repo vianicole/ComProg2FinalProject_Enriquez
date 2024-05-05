@@ -36,9 +36,12 @@ public class JFrameProblem6 extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         output = new javax.swing.JTextArea();
         input = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jButton1.setBackground(new java.awt.Color(255, 102, 102));
         jButton1.setText("Back");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -46,6 +49,7 @@ public class JFrameProblem6 extends javax.swing.JFrame {
             }
         });
 
+        check.setBackground(new java.awt.Color(255, 102, 102));
         check.setText("Check");
         check.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -55,43 +59,65 @@ public class JFrameProblem6 extends javax.swing.JFrame {
 
         jLabel1.setText("Input Number: ");
 
+        output.setBackground(new java.awt.Color(255, 204, 204));
         output.setColumns(20);
         output.setRows(5);
         jScrollPane1.setViewportView(output);
+
+        input.setBackground(new java.awt.Color(255, 204, 204));
+
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 153, 153));
+        jLabel2.setText("CHECK ARMSTRONG NUMBER");
+
+        jLabel3.setBackground(new java.awt.Color(255, 153, 153));
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 153, 153));
+        jLabel3.setText("PROBLEM 6");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                            .addContainerGap()
-                            .addComponent(jButton1))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(67, 67, 67)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jLabel1)
-                                    .addGap(50, 50, 50)
-                                    .addComponent(input, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                    .addComponent(check))
-                .addContainerGap(99, Short.MAX_VALUE))
+                .addGap(6, 6, 6)
+                .addComponent(jButton1)
+                .addContainerGap(588, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel1)
+                                .addGap(50, 50, 50)
+                                .addComponent(input, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(check))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(19, 19, 19)
+                        .addComponent(jLabel2))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(75, 75, 75)
+                        .addComponent(jLabel3)))
+                .addGap(209, 209, 209))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(42, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(137, Short.MAX_VALUE)
+                .addComponent(jLabel3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel2)
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(21, 21, 21)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
                     .addComponent(input, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(check)
-                .addGap(50, 50, 50)
+                .addGap(133, 133, 133)
                 .addComponent(jButton1)
                 .addGap(21, 21, 21))
         );
@@ -107,24 +133,20 @@ public class JFrameProblem6 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void checkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkActionPerformed
-        // TODO add your handling code here:
-    if (validInput) {
     int num = Integer.parseInt(input.getText());
-
-    int sum = 0;
-    int temp = num;
-
-    while (temp != 0) {
-        int digit = temp % 10; 
-        sum += digit; 
-        temp /= 10; 
-    }
-
-    output.setText("The sum of digits of " + num + " is " + sum);
-} else {
-    output.setText("Invalid input! Please enter a non-negative number");
-}
-
+        int r,sum = 0;
+        int temp = num;
+       
+        while(num > 0){
+           r = num % 10;
+           num = num/10;
+            sum = sum + r*r*r;
+        }
+        if(temp == sum){
+           output.setText(" Your input is an Armstrong number.");
+        }else{ 
+           output.setText(" Your input is not an Armstrong number");
+       }
     }//GEN-LAST:event_checkActionPerformed
 
     /**
@@ -168,6 +190,8 @@ public class JFrameProblem6 extends javax.swing.JFrame {
     private javax.swing.JTextField input;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea output;
     // End of variables declaration//GEN-END:variables
