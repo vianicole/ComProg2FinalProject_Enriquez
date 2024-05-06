@@ -48,7 +48,9 @@ public class JFrameProblem9 extends javax.swing.JFrame {
         jLabel2.setText("COUNT WORDS IN A SENTENCE");
 
         input.setBackground(new java.awt.Color(255, 204, 204));
+        input.setForeground(new java.awt.Color(51, 51, 51));
 
+        jLabel3.setForeground(new java.awt.Color(51, 51, 51));
         jLabel3.setText("Enter Words:");
 
         output.setBackground(new java.awt.Color(255, 204, 204));
@@ -65,6 +67,7 @@ public class JFrameProblem9 extends javax.swing.JFrame {
         });
 
         jButton2.setBackground(new java.awt.Color(255, 102, 102));
+        jButton2.setForeground(new java.awt.Color(51, 51, 51));
         jButton2.setText("Back");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
