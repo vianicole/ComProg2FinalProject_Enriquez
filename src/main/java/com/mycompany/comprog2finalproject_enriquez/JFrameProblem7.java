@@ -4,6 +4,8 @@
  */
 package com.mycompany.comprog2finalproject_enriquez;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author PC
@@ -27,6 +29,14 @@ public class JFrameProblem7 extends javax.swing.JFrame {
     private void initComponents() {
 
         jButton1 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        input1 = new javax.swing.JTextField();
+        input2 = new javax.swing.JTextField();
+        jButton2 = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        output = new javax.swing.JTextArea();
+        jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -37,6 +47,23 @@ public class JFrameProblem7 extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setText("First Number:");
+
+        jLabel2.setText("Second Number:");
+
+        jButton2.setText("Compute");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
+        output.setColumns(20);
+        output.setRows(5);
+        jScrollPane1.setViewportView(output);
+
+        jButton3.setText("Clear");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -44,14 +71,43 @@ public class JFrameProblem7 extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jButton1)
-                .addContainerGap(588, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(167, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 367, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel1)
+                            .addComponent(jLabel2))
+                        .addGap(29, 29, 29)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(input1, javax.swing.GroupLayout.DEFAULT_SIZE, 110, Short.MAX_VALUE)
+                            .addComponent(input2))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButton2)
+                            .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(132, 132, 132))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(556, Short.MAX_VALUE)
+                .addGap(162, 162, 162)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(input1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton2))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(input2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton3))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 241, Short.MAX_VALUE)
                 .addComponent(jButton1)
-                .addGap(21, 21, 21))
+                .addContainerGap())
         );
 
         pack();
@@ -64,6 +120,33 @@ public class JFrameProblem7 extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+//        int num1 = Integer.parseInt(input1.getText());
+//        int num2 = Integer.parseInt(input2.getText());
+//        int GcdValue;
+//        GcdValue = gcd(num1, num2);
+//        
+//        output.setText(" The GCD of the two Inputted Numbers is - " + GcdValue + "\n The LCM of the two Inputted Numbers is - " + lcm(num1, num2,GcdValue));
+//        
+    }//GEN-LAST:event_jButton2ActionPerformed
+     
+    
+//    static int gcd(int num1,int num2){
+//        if (num2 == 0){
+//            return num1;
+//        }else{
+//            return gcd(num2, num1 % num2);
+//        }
+//    }
+//    static int lcm(int num1, int num2, int GcdValue){
+//        return Math.abs(num1 * num2) / GcdValue;
+//    }
+//   
+    
+  
+    
+       
+    
     /**
      * @param args the command line arguments
      */
@@ -101,6 +184,16 @@ public class JFrameProblem7 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField input1;
+    private javax.swing.JTextField input2;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea output;
     // End of variables declaration//GEN-END:variables
-}
+// Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
