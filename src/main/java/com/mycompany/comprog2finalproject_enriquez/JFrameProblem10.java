@@ -38,7 +38,8 @@ public class JFrameProblem10 extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton1.setBackground(new java.awt.Color(255, 102, 102));
+        jButton1.setBackground(new java.awt.Color(255, 153, 153));
+        jButton1.setForeground(new java.awt.Color(51, 51, 51));
         jButton1.setText("Back");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -53,9 +54,11 @@ public class JFrameProblem10 extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setForeground(new java.awt.Color(255, 153, 153));
         jLabel1.setText("Enter a number:");
 
-        calculate.setBackground(new java.awt.Color(255, 102, 102));
+        calculate.setBackground(new java.awt.Color(255, 153, 153));
+        calculate.setForeground(new java.awt.Color(51, 51, 51));
         calculate.setText("Generate");
         calculate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -77,7 +80,8 @@ public class JFrameProblem10 extends javax.swing.JFrame {
         jLabel3.setForeground(new java.awt.Color(255, 153, 153));
         jLabel3.setText("PROBLEM 10");
 
-        jButton2.setBackground(new java.awt.Color(255, 102, 102));
+        jButton2.setBackground(new java.awt.Color(255, 153, 153));
+        jButton2.setForeground(new java.awt.Color(51, 51, 51));
         jButton2.setText("Click");
         jButton2.setToolTipText("");
 

@@ -50,7 +50,7 @@ public class JFrameProblem9 extends javax.swing.JFrame {
         input.setBackground(new java.awt.Color(255, 204, 204));
         input.setForeground(new java.awt.Color(51, 51, 51));
 
-        jLabel3.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel3.setForeground(new java.awt.Color(255, 153, 153));
         jLabel3.setText("Enter Words:");
 
         output.setBackground(new java.awt.Color(255, 204, 204));
@@ -58,7 +58,8 @@ public class JFrameProblem9 extends javax.swing.JFrame {
         output.setRows(5);
         jScrollPane1.setViewportView(output);
 
-        jButton1.setBackground(new java.awt.Color(255, 102, 102));
+        jButton1.setBackground(new java.awt.Color(255, 153, 153));
+        jButton1.setForeground(new java.awt.Color(51, 51, 51));
         jButton1.setText("Count");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -66,7 +67,7 @@ public class JFrameProblem9 extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setBackground(new java.awt.Color(255, 102, 102));
+        jButton2.setBackground(new java.awt.Color(255, 153, 153));
         jButton2.setForeground(new java.awt.Color(51, 51, 51));
         jButton2.setText("Back");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -75,7 +76,8 @@ public class JFrameProblem9 extends javax.swing.JFrame {
             }
         });
 
-        jButton3.setBackground(new java.awt.Color(255, 102, 102));
+        jButton3.setBackground(new java.awt.Color(255, 153, 153));
+        jButton3.setForeground(new java.awt.Color(51, 51, 51));
         jButton3.setText("Clear");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

@@ -41,11 +41,12 @@ public class NewJFrameSets extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jLabel1.setBackground(new java.awt.Color(255, 204, 204));
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 102, 102));
+        jLabel1.setForeground(new java.awt.Color(255, 153, 153));
         jLabel1.setText("SET 2");
 
-        jButton1.setBackground(new java.awt.Color(255, 102, 102));
+        jButton1.setBackground(new java.awt.Color(255, 153, 153));
         jButton1.setForeground(new java.awt.Color(51, 51, 51));
         jButton1.setText("Problem 1");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -54,7 +55,7 @@ public class NewJFrameSets extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setBackground(new java.awt.Color(255, 102, 102));
+        jButton2.setBackground(new java.awt.Color(255, 153, 153));
         jButton2.setForeground(new java.awt.Color(51, 51, 51));
         jButton2.setText("Problem 2");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -63,7 +64,7 @@ public class NewJFrameSets extends javax.swing.JFrame {
             }
         });
 
-        jButton3.setBackground(new java.awt.Color(255, 102, 102));
+        jButton3.setBackground(new java.awt.Color(255, 153, 153));
         jButton3.setForeground(new java.awt.Color(51, 51, 51));
         jButton3.setText("Problem 3");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -72,7 +73,7 @@ public class NewJFrameSets extends javax.swing.JFrame {
             }
         });
 
-        jButton4.setBackground(new java.awt.Color(255, 102, 102));
+        jButton4.setBackground(new java.awt.Color(255, 153, 153));
         jButton4.setForeground(new java.awt.Color(51, 51, 51));
         jButton4.setText("Problem 4");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -81,7 +82,7 @@ public class NewJFrameSets extends javax.swing.JFrame {
             }
         });
 
-        jButton5.setBackground(new java.awt.Color(255, 102, 102));
+        jButton5.setBackground(new java.awt.Color(255, 153, 153));
         jButton5.setForeground(new java.awt.Color(51, 51, 51));
         jButton5.setText("Problem 5");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -90,7 +91,7 @@ public class NewJFrameSets extends javax.swing.JFrame {
             }
         });
 
-        jButton6.setBackground(new java.awt.Color(255, 102, 102));
+        jButton6.setBackground(new java.awt.Color(255, 153, 153));
         jButton6.setForeground(new java.awt.Color(51, 51, 51));
         jButton6.setText("Problem 6");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -99,7 +100,7 @@ public class NewJFrameSets extends javax.swing.JFrame {
             }
         });
 
-        jButton7.setBackground(new java.awt.Color(255, 102, 102));
+        jButton7.setBackground(new java.awt.Color(255, 153, 153));
         jButton7.setForeground(new java.awt.Color(51, 51, 51));
         jButton7.setText("Problem 7");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
@@ -108,7 +109,7 @@ public class NewJFrameSets extends javax.swing.JFrame {
             }
         });
 
-        jButton8.setBackground(new java.awt.Color(255, 102, 102));
+        jButton8.setBackground(new java.awt.Color(255, 153, 153));
         jButton8.setForeground(new java.awt.Color(51, 51, 51));
         jButton8.setText("Problem 8");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
@@ -117,7 +118,7 @@ public class NewJFrameSets extends javax.swing.JFrame {
             }
         });
 
-        jButton9.setBackground(new java.awt.Color(255, 102, 102));
+        jButton9.setBackground(new java.awt.Color(255, 153, 153));
         jButton9.setForeground(new java.awt.Color(51, 51, 51));
         jButton9.setText("Problem 9");
         jButton9.addActionListener(new java.awt.event.ActionListener() {
@@ -126,7 +127,7 @@ public class NewJFrameSets extends javax.swing.JFrame {
             }
         });
 
-        jButton10.setBackground(new java.awt.Color(255, 102, 102));
+        jButton10.setBackground(new java.awt.Color(255, 153, 153));
         jButton10.setForeground(new java.awt.Color(51, 51, 51));
         jButton10.setText("Problem 10");
         jButton10.addActionListener(new java.awt.event.ActionListener() {
