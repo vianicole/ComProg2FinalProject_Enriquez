@@ -85,7 +85,7 @@ public class JFrameProblem2 extends javax.swing.JFrame {
 
         jButton3.setBackground(new java.awt.Color(255, 153, 153));
         jButton3.setForeground(new java.awt.Color(51, 51, 51));
-        jButton3.setText("Click");
+        jButton3.setText("Clear");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);

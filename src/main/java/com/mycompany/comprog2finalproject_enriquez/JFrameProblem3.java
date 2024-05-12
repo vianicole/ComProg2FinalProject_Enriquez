@@ -78,7 +78,7 @@ public class JFrameProblem3 extends javax.swing.JFrame {
 
         jButton3.setBackground(new java.awt.Color(255, 153, 153));
         jButton3.setForeground(new java.awt.Color(51, 51, 51));
-        jButton3.setText("Click");
+        jButton3.setText("Clear");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
@@ -148,13 +148,13 @@ public class JFrameProblem3 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-       int inputp3 = Integer.parseInt(input.getText());
+     int inputted = Integer.parseInt(input.getText());
     int rev = 0, rem;
     
-    while(inputp3 > 0){
-        rem = inputp3 % 10;
+    while(inputted > 0){
+        rem = inputted % 10;
         rev = (rev * 10) + rem;
-        inputp3 = inputp3 / 10;
+        inputted = inputted / 10;
         
     }
     output.setText("The reverse of the inputted Number is: " + rev);

@@ -152,22 +152,23 @@ public class JFrameProblem4 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-    String inputted = input.getText();
-        String arr[]= inputted.split(",");
-        int array[] = new int[arr.length];
-        
-        for(int x = 0; x < array.length; x++){
-            array[x]= Integer.parseInt(arr[x].trim());
-        }
-        
-        int max = array[0];
-        
-        for(int x = 1; x < array.length; x++){
-            if(array[x] > max){
-                max = array[x];
-                output.setText("The max in the list is: " + max);
-            }
-        }
+   String inputted = input.getText();
+   String arr[] = inputted.split(",");
+   int array[] = new int[arr.length];
+
+   for (int x = 0; x < array.length; x++) {
+    array[x] = Integer.parseInt(arr[x].trim());
+   }
+
+   int max = array[0];
+
+   for (int x = 1; x < array.length; x++) {
+    if (array[x] > max) {
+        max = array[x];
+    }
+    }
+
+    output.setText("The max in the list is: " + max);
 
     }//GEN-LAST:event_jButton2ActionPerformed
 

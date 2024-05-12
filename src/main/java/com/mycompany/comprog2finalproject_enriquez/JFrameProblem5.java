@@ -150,7 +150,19 @@ public class JFrameProblem5 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-
+    String inputted = input.getText();
+       String str = inputted;
+        String rev = "";
+        int leng = inputted.length();
+        for(int h = leng - 1; h >= 0; h--){
+        rev =  rev + str.charAt(h);
+    }
+        if(str.equals(rev)){
+            output.setText(str + " Is a String Palindrome");
+        }else{
+            output.setText(str + " Is not a String Palindrome");
+        }
+    
     
     }//GEN-LAST:event_jButton2ActionPerformed
 
